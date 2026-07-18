@@ -9,6 +9,15 @@ public class inputs_in_java {
 
         System.out.println(input);
 
+        int number = sc.nextInt();
+        System.out.println(number);
+
+        float decimal = sc.nextFloat();
+        System.out.println(decimal);    
+
+        boolean bool = sc.nextBoolean();
+        System.out.println(bool);
+
         sc.close();
     }
 }

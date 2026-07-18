@@ -8,5 +8,7 @@ public class inputs_in_java {
         String input = sc.nextLine();
 
         System.out.println(input);
+
+        sc.close();
     }
 }

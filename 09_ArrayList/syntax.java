@@ -27,6 +27,23 @@ public class syntax {
         int size = numbers.size();
         System.out.println(size);
 
+        // Clear the ArrayList
+        numbers.clear();
+        System.out.println(numbers);
+
+        // Check if the ArrayList is empty
+        boolean isEmpty = numbers.isEmpty();
+        System.out.println(isEmpty);
+         
+        // Create an ArrayList of strings
+        ArrayList<String> fruits = new ArrayList<>();
+        // Add elements to the ArrayList
+        fruits.add("Apple");
+        fruits.add("Banana");
+        fruits.add("Cherry");
+
+        // Print the ArrayList
+        System.out.println(fruits);
     }
     
 }

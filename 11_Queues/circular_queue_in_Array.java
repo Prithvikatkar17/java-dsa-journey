@@ -51,6 +51,8 @@ public class circular_queue_in_Array {
             return data;
         }
 
+
+        
         public boolean isEmpty() {
             return size == 0;
         }

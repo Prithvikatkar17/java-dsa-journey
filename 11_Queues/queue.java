@@ -21,7 +21,6 @@ public class queue {
         printQueue(q);
     }
 
-    
     public static void printQueue(Queue<Integer> q){
         while(!q.isEmpty()){
             System.out.println(q.peek()) ;

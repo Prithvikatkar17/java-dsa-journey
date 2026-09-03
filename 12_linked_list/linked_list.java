@@ -21,6 +21,7 @@ public class linked_list {
         newNode.next = head ;
         head = newNode ;
     }
+    
     public static void main(String[] args) {
         
     }

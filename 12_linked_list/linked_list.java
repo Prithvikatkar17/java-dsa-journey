@@ -38,11 +38,25 @@ public class linked_list {
         }
         System.out.println("null") ;
     }
+    public void add(int index, int data){
+        if(index == 0){
+            addFirst(data) ;
+            return ;
+        }
+        Node newNode = new Node(data) ;
+        Node temp = head ;
+        for(int i=0; i<index-1; i++){
+            temp = temp.next ;
+        }
+        newNode.next = temp.next ;
+        temp.next = newNode ;
+    }
     public static void main(String[] args) {
         linked_list ll = new linked_list() ;
         ll.addLast(10) ;
         ll.addLast(20) ;
         ll.addLast(30) ;
+        ll.add(1, 15) ;
         ll.print() ;
     }
 }

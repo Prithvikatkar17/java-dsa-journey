@@ -21,6 +21,15 @@ public class linked_list {
         newNode.next = head ;
         head = newNode ;
     }
+    public void addLast(int data){
+        Node newNode = new Node(data) ;
+        if(head == null){
+            head = tail = newNode ;
+            return ;
+        }
+        tail.next = newNode ;
+        tail = newNode ;
+    }
     public static void main(String[] args) {
         
     }

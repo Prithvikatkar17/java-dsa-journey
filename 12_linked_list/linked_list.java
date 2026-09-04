@@ -30,7 +30,19 @@ public class linked_list {
         tail.next = newNode ;
         tail = newNode ;
     }
+    public void print(){
+        Node temp = head ;
+        while(temp != null){
+            System.out.print(temp.data + "->") ;
+            temp = temp.next ;
+        }
+        System.out.println("null") ;
+    }
     public static void main(String[] args) {
-        
+        linked_list ll = new linked_list() ;
+        ll.addLast(10) ;
+        ll.addLast(20) ;
+        ll.addLast(30) ;
+        ll.print() ;
     }
 }

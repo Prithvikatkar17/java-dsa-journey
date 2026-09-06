@@ -7,4 +7,14 @@ public class hashmap {
         System.out.println(map.get("apple"));
         System.out.println(map.get("banana"));
     }
+    // hashmap methods
+    // put(K key, V value)
+    // get(Object key)
+    // remove(Object key)
+    // containsKey(Object key)
+    // containsValue(Object value)
+    // size()
+    // isEmpty()
+    // clear()
+     
 }

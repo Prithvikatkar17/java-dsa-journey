@@ -11,8 +11,10 @@ public class linked_list {
     }
     public Node head ;
     public Node tail ;
+    public static int size ;
 
     public void addFirst(int data){
+        size++ ;
         Node newNode = new Node(data) ;
         if(head == null){
             head = tail = newNode ;
@@ -22,6 +24,7 @@ public class linked_list {
         head = newNode ;
     }
     public void addLast(int data){
+        size++ ;
         Node newNode = new Node(data) ;
         if(head == null){
             head = tail = newNode ;
@@ -39,6 +42,7 @@ public class linked_list {
         System.out.println("null") ;
     }
     public void add(int index, int data){
+        size++ ;
         if(index == 0){
             addFirst(data) ;
             return ;
@@ -58,5 +62,6 @@ public class linked_list {
         ll.addLast(30) ;
         ll.add(1, 15) ;
         ll.print() ;
+        System.out.println(ll.size) ;
     }
 }

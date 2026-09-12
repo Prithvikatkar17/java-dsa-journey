@@ -104,6 +104,28 @@ public class linked_list {
         }
         head = prev ;
     }
+    public void removeNthFromEnd(int n) {
+        Node dummy = new Node(0);
+        dummy.next = head;
+        Node first = dummy;
+        Node second = dummy;
+
+        // Move first n+1 steps ahead
+        for (int i = 0; i <= n; i++) {
+            first = first.next;
+        }
+
+        // Move first to the end, maintaining the gap
+        while (first != null) {
+            first = first.next;
+            second = second.next;
+        }
+
+        // Remove the nth node from the end
+        second.next = second.next.next;
+
+        head = dummy.next; // Update head in case the first node was removed
+    }
     public static void main(String[] args) {
         linked_list ll = new linked_list() ;
         ll.addLast(10) ;

@@ -91,6 +91,19 @@ public class linked_list {
         tail.next = null ;
         return var2 ;
     }
+    public  void reverse(){
+        Node prev = null ;
+        Node curr = tail = head ;
+        Node next ;
+
+        while(curr != null){
+            next = curr.next ;
+            curr.next = prev ;
+            prev = curr ;
+            curr = next ;
+        }
+        head = prev ;
+    }
     public static void main(String[] args) {
         linked_list ll = new linked_list() ;
         ll.addLast(10) ;
@@ -102,6 +115,8 @@ public class linked_list {
         ll.removeFirst() ;
         ll.print();
         ll.removeLast() ;
+        ll.print();
+        ll.reverse();
         ll.print();
     }
 }

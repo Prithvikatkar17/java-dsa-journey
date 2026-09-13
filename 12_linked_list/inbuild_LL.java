@@ -7,6 +7,11 @@ public class inbuild_LL {
         ll.addFirst(2);
         ll.addLast(3);
 
+        // methods of LinkedList
+
+        ll.removeFirst();
+        ll.removeLast();    
+
         System.out.println(ll);
     }
 }

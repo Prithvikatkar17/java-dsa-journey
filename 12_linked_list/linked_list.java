@@ -126,6 +126,9 @@ public class linked_list {
 
         head = dummy.next; // Update head in case the first node was removed
     }
+    public void zigzag(){
+        
+    }
     public static void main(String[] args) {
         linked_list ll = new linked_list() ;
         ll.addLast(10) ;

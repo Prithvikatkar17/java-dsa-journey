@@ -128,7 +128,6 @@ public class linked_list {
     }
     public void zigzag(){
         
-        
     }
     public static void main(String[] args) {
         linked_list ll = new linked_list() ;

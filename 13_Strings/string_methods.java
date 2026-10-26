@@ -19,6 +19,10 @@ public class string_methods {
             s.toLowerCase();            // Lowercase
             s.trim();                   // Remove spaces
             s.replace('a', 'b');        // Replace
-            s.split(" ");               // Split
+            s.split(" ");    
+            
+            
+            char ch = 'a'; 
+            System.out.println((int) ch);
     }
 }
